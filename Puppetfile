@@ -13,7 +13,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "1.2.0"
+github "boxen", "2.1.0"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
@@ -24,18 +24,19 @@ github "git",      "1.0.0"
 github "homebrew", "1.1.2"
 github "hub",      "1.0.0"
 github "inifile",  "0.9.0", :repo => "cprice-puppet/puppetlabs-inifile"
-github "nginx",    "1.1.0"
-github "nodejs",   "1.0.0"
+github "nginx",    "1.4.0"
+github "nodejs",   "2.2.0"
 github "nvm",      "1.0.0"
-github "ruby",     "4.0.0"
-github "stdlib",   "4.0.0", :repo => "puppetlabs/puppetlabs-stdlib"
+github "ruby",     "4.2.0"
+github "stdlib",   "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",     "1.0.0"
+
 github "sysctl",   "1.0.0"
 github "xquartz",  "1.0.0"
 github "java",     "1.1.0"
 github "firefox",  "1.0.6"
 github "clojure",  "1.2.0"
-
+github "flux",     "0.0.1"
 
 # my own shit
 mod "dropbox",      :git => "git://github.com/boxen/puppet-dropbox.git"
@@ -64,6 +65,9 @@ mod "macvim",       :git => "git://github.com/boxen/puppet-macvim.git"
 mod "python",       :git => "https://github.com/boxen/puppet-python.git"
 mod "postgresapp",  :git => "https://github.com/boxen/puppet-postgresapp.git"
 mod "phantomjs",    :git => "https://github.com/boxen/puppet-phantomjs.git"
+#mod "osx",          :git => "https://github.com/boxen/puppet-osx.git"
+
+mod "evernote", :git => "https://github.com/jasonamyers/puppet-evernote.git"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.

@@ -180,10 +180,17 @@ GIT
   specs:
     python (0.0.1)
 
+GIT
+  remote: https://github.com/jasonamyers/puppet-evernote.git
+  ref: master
+  sha: 3258c687627c3aa32e790e87a4282421a4bcc9d8
+  specs:
+    evernote (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (1.2.0)
+    boxen (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-clojure
@@ -199,6 +206,11 @@ GITHUBTARBALL
   remote: boxen/puppet-firefox
   specs:
     firefox (1.0.6)
+
+GITHUBTARBALL
+  remote: boxen/puppet-flux
+  specs:
+    flux (0.0.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -228,12 +240,12 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.1.0)
+    nginx (1.4.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (1.0.0)
+    nodejs (2.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nvm
@@ -243,7 +255,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (4.0.0)
+    ruby (4.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-sudo
@@ -268,17 +280,19 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
-    stdlib (4.0.0)
+    stdlib (4.0.2)
 
 DEPENDENCIES
   alfred (>= 0)
-  boxen (= 1.2.0)
+  boxen (= 2.1.0)
   chrome (>= 0)
   clojure (= 1.2.0)
   ctags (>= 0)
   dnsmasq (= 1.0.0)
   dropbox (>= 0)
+  evernote (>= 0)
   firefox (= 1.0.6)
+  flux (= 0.0.1)
   gcc (= 1.0.0)
   git (= 1.0.0)
   googledrive (>= 0)
@@ -291,8 +305,8 @@ DEPENDENCIES
   java (= 1.1.0)
   macvim (>= 0)
   mongodb (>= 0)
-  nginx (= 1.1.0)
-  nodejs (= 1.0.0)
+  nginx (= 1.4.0)
+  nodejs (= 2.2.0)
   nvm (= 1.0.0)
   onepassword (>= 0)
   osx (>= 0)
@@ -302,9 +316,9 @@ DEPENDENCIES
   propane (>= 0)
   python (>= 0)
   redis (>= 0)
-  ruby (= 4.0.0)
+  ruby (= 4.2.0)
   skype (>= 0)
-  stdlib (= 4.0.0)
+  stdlib (= 4.0.2)
   sudo (= 1.0.0)
   sysctl (= 1.0.0)
   tmux (>= 0)
