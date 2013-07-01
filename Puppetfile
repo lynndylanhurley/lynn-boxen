@@ -10,7 +10,7 @@ def github(name, version, options = nil)
   mod name, version, :github_tarball => options[:repo]
 end
 
-def github(name, options = nil)
+def github_latest(name, options = nil)
   options ||= {}
   options[:repo] ||= "boxen/puppet-#{name}"
   mod name, :github_tarball => options[:repo]
