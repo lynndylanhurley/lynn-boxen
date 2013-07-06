@@ -78,7 +78,7 @@ node default {
 
   # custom
   include people::lynndylanhurley
-  #include nvms
+  include nvms
   include rbenvs
 
   # fail if FDE is not enabled

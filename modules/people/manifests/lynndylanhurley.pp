@@ -6,7 +6,6 @@ class people::lynndylanhurley {
 
   #mac apps
   include flux
-  #include osx
   #include evernote
   include firefox::nightly
   include dropbox
@@ -35,7 +34,7 @@ class people::lynndylanhurley {
   include wget
   include redis
   include mongodb
-  include phantomjs
+  #include phantomjs
 
   # mac defaults
   #osx::recovery_message { 'If this Mac is found, please call 773-234-7737': }
