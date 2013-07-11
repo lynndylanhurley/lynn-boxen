@@ -33,7 +33,7 @@ github "inifile",    "0.9.0", :repo => "cprice404/puppetlabs-inifile"
 github "nginx",      "1.4.0"
 github "nodejs",     "2.2.0"
 github "repository", "2.2.0"
-github "ruby",       "6.0.0"
+github "ruby",       "4.2.0"
 github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",       "1.0.0"
 
@@ -83,9 +83,15 @@ github_latest "propane"
 github_latest "onepassword"
 github_latest "macvim"
 github_latest "python"
-github_latest "postgresapp"
+github "postgresql", "1.0.4"
 github_latest "phantomjs"
 github_latest "osx"
+github_latest "keyremap4macbook"
+github_latest "github_for_mac"
+
+mod "pckeyboardhack", :git => "https://github.com/smh/puppet-pckeyboardhack.git"
+
+mod "property_list_key", "0.1.0", :github_tarball => "glarizza/puppet-property_list_key"
 
 #mod "evernote", :git => "https://github.com/jasonamyers/puppet-evernote.git"
 

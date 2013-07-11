@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/smh/puppet-pckeyboardhack.git
+  ref: master
+  sha: 8c59b1219181594e7fdd3142c7251177266c34d0
+  specs:
+    pckeyboardhack (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-alfred
   specs:
@@ -89,6 +96,11 @@ GITHUBTARBALL
     java (1.1.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-keyremap4macbook
+  specs:
+    keyremap4macbook (1.0.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
@@ -124,9 +136,9 @@ GITHUBTARBALL
     phantomjs (2.0.2)
 
 GITHUBTARBALL
-  remote: boxen/puppet-postgresapp
+  remote: boxen/puppet-postgresql
   specs:
-    postgresapp (1.0.0)
+    postgresql (1.0.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-pow
@@ -156,7 +168,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.0.0)
+    ruby (4.2.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-skype
@@ -219,6 +231,11 @@ GITHUBTARBALL
     inifile (0.9.0)
 
 GITHUBTARBALL
+  remote: glarizza/puppet-property_list_key
+  specs:
+    property_list_key (0.1.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.0.2)
@@ -243,20 +260,23 @@ DEPENDENCIES
   inifile (= 0.9.0)
   iterm2 (>= 0)
   java (>= 0)
+  keyremap4macbook (>= 0)
   macvim (>= 0)
   mongodb (>= 0)
   nginx (= 1.4.0)
   nodejs (= 2.2.0)
   onepassword (>= 0)
   osx (>= 0)
+  pckeyboardhack (>= 0)
   phantomjs (>= 0)
-  postgresapp (>= 0)
+  postgresql (= 1.0.4)
   pow (>= 0)
   propane (>= 0)
+  property_list_key (= 0.1.0)
   python (>= 0)
   redis (>= 0)
   repository (= 2.2.0)
-  ruby (= 6.0.0)
+  ruby (= 4.2.0)
   skype (>= 0)
   stdlib (= 4.0.2)
   sudo (= 1.0.0)

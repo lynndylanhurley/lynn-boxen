@@ -26,7 +26,7 @@ class people::lynndylanhurley {
   include virtualbox
   include vagrant
   include iterm2::stable
-  include postgresapp
+  include postgresql
   include heroku
   include pow
   include imagemagick
@@ -34,21 +34,39 @@ class people::lynndylanhurley {
   include wget
   include redis
   include mongodb
+  #include osx
   #include phantomjs
+  include github_for_mac
 
   # mac defaults
-  #osx::recovery_message { 'If this Mac is found, please call 773-234-7737': }
-  #osx::global::expand_print_dialog
-  #osx::global::expand_save_dialog
+  osx::recovery_message { 'If this Mac is found, please call 773-234-7737': }
+  include osx::global::expand_print_dialog
+  include osx::global::expand_save_dialog
 
   # dock
-  #osx::dock::2d
-  #osx::dock::autohide
-  #osx::dock::dim_hidden_apps
+  include osx::dock::2d
+  include osx::dock::autohide
+  include osx::dock::dim_hidden_apps
 
   # misc
-  #osx::disable_app_quarantine
-  #osx::no_network_dsstores
+  include osx::disable_app_quarantine
+  include osx::no_network_dsstores
+
+  #keyboard hack
+  include pckeyboardhack
+
+  # add pckeyboardhack to login items:
+  include pckeyboardhack::login_item
+
+  # change the left control to F19:
+  pckeyboardhack::bind { 'keyboard bindings':
+    mappings => { 'caps_lock' => 53 }
+  }
+
+  include keyremap4macbook
+
+  # launch and add login-item
+  include keyremap4macbook::login_item
 
 
   # heroku
