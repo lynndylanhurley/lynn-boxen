@@ -66,47 +66,42 @@ class rbenvs {
   }
 
   ruby::plugin { 'rbenv-vars':
-    version => 'master',
+    ensure => 'master',
     source  => 'sstephenson/rbenv-vars'
   }
 
   ruby::plugin { 'rbenv-whatis':
-    version => 'master',
+    ensure => 'master',
     source  => 'rkh/rbenv-whatis'
   }
 
   ruby::plugin { 'rbenv-use':
-    version => 'master',
+    ensure => 'master',
     source  => 'rkh/rbenv-use'
   }
 
   ruby::plugin { 'rbenv-update':
-    version => 'master',
+    ensure => 'master',
     source  => 'rkh/rbenv-update'
   }
 
   ruby::plugin { 'rbenv-gemset':
-    version => 'master',
+    ensure => 'master',
     source  => 'jamis/rbenv-gemset'
   }
 
   ruby::plugin { 'rbenv-each':
-    version => 'master',
+    ensure => 'master',
     source  => 'chriseppstein/rbenv-each'
   }
 
-  ruby::plugin { 'rbenv-default-gems':
-    version => 'master',
-    source  => 'sstephenson/rbenv-default-gems'
-  }
-
   ruby::plugin { 'rbenv-sudo':
-    version => 'master',
+    ensure => 'master',
     source  => 'dcarley/rbenv-sudo'
   }
 
   ruby::plugin { 'rbenv-rehash':
-    version => 'master',
+    ensure => 'master',
     source  => 'ryansouza/rbenv-rehash'
   }
 

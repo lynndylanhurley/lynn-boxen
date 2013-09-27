@@ -3,11 +3,19 @@ class people::lynndylanhurley {
   $home = "/Users/${::boxen_user}"
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
 
+  notify{"@-->dotfiles_dir ${dotfiles_dir}":}
+
   repository { $dotfiles_dir:
-    source => "${::github_user}"
+    source => "lynndylanhurley/dotfiles"
   }
 
-  file { "${home}/.zshrc":}
+  exec { "install dotfiles":
+    cwd       => $dotfiles_dir,
+    command   => "./install.sh",
+    provider  => shell,
+    creates   => "${home}/.zshrc",
+    require   => Repository[$dotfiles_dir]
+  }
 
   #languages
   include clojure
@@ -48,7 +56,7 @@ class people::lynndylanhurley {
   # phantomjs
   include phantomjs
   phantomjs::version { '1.9.0': }
-  phantomjs::global { '1.9.0': }
+  #phantomjs::global { '1.9.0': }
 
   # mac defaults
   osx::recovery_message { 'If this Mac is found, please call 773-234-7737': }
