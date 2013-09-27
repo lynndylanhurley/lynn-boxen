@@ -15,7 +15,6 @@ class people::lynndylanhurley {
 
   #mac apps
   include flux
-  #include evernote
   include firefox
   include firefox::nightly
   include dropbox
@@ -67,8 +66,6 @@ class people::lynndylanhurley {
 
   #keyboard hack
   include pckeyboardhack
-
-  # add pckeyboardhack to login items:
   include pckeyboardhack::login_item
 
   # change the capslock key to escape
