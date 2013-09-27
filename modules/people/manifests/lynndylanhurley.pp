@@ -1,5 +1,14 @@
 class people::lynndylanhurley {
 
+  $home = "/Users/${::boxen_user}"
+  $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
+
+  repository { $dotfiles_dir:
+    source => "${::github_user}"
+  }
+
+  file { "${home}/.zshrc":}
+
   #languages
   include clojure
   include vlc
@@ -7,6 +16,7 @@ class people::lynndylanhurley {
   #mac apps
   include flux
   #include evernote
+  include firefox
   include firefox::nightly
   include dropbox
   include alfred
@@ -34,9 +44,12 @@ class people::lynndylanhurley {
   include wget
   include redis
   include mongodb
-  #include osx
-  #include phantomjs
   include github_for_mac
+
+  # phantomjs
+  include phantomjs
+  phantomjs::version { '1.9.0': }
+  phantomjs::global { '1.9.0': }
 
   # mac defaults
   osx::recovery_message { 'If this Mac is found, please call 773-234-7737': }
@@ -58,9 +71,9 @@ class people::lynndylanhurley {
   # add pckeyboardhack to login items:
   include pckeyboardhack::login_item
 
-  # change the left control to F19:
+  # change the capslock key to escape
   pckeyboardhack::bind { 'keyboard bindings':
-    mappings => { 'caps_lock' => 53 }
+    mappings => { 'capslock' => 53 }
   }
 
   include keyremap4macbook

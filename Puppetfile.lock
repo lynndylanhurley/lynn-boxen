@@ -61,6 +61,11 @@ GITHUBTARBALL
     git (1.2.2)
 
 GITHUBTARBALL
+  remote: boxen/puppet-github_for_mac
+  specs:
+    github_for_mac (1.0.1)
+
+GITHUBTARBALL
   remote: boxen/puppet-googledrive
   specs:
     googledrive (1.0.2)
@@ -252,6 +257,7 @@ DEPENDENCIES
   flux (>= 0)
   gcc (= 1.0.0)
   git (= 1.2.2)
+  github_for_mac (>= 0)
   googledrive (>= 0)
   heroku (>= 0)
   homebrew (= 1.1.2)
