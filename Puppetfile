@@ -77,6 +77,5 @@ github "osx", "1.6.0"
 github "keyremap4macbook", "1.0.4"
 github "github_for_mac", "1.0.1"
 
-#mod "pckeyboardhack", "1.0.5", :github_tarball => "smh/puppet-pckeyboardhack.git"
-
-#mod "property_list_key", "0.1.0", :github_tarball => "glarizza/puppet-property_list_key"
+mod "pckeyboardhack", "1.0.5", :github_tarball => "smh/puppet-pckeyboardhack.git"
+mod "property_list_key", "0.1.0", :github_tarball => "glarizza/puppet-property_list_key"
