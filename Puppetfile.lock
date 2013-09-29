@@ -234,6 +234,11 @@ GITHUBTARBALL
     zsh (1.0.0)
 
 GITHUBTARBALL
+  remote: glarizza/puppet-property_list_key
+  specs:
+    property_list_key (0.1.0)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -242,6 +247,11 @@ GITHUBTARBALL
   remote: puppetlabs/puppetlabs-stdlib
   specs:
     stdlib (4.1.0)
+
+GITHUBTARBALL
+  remote: smh/puppet-pckeyboardhack
+  specs:
+    pckeyboardhack (1.0.5)
 
 DEPENDENCIES
   alfred (= 1.1.4)
@@ -273,10 +283,12 @@ DEPENDENCIES
   onepassword (= 1.0.2)
   openssl (= 1.0.0)
   osx (= 1.6.0)
+  pckeyboardhack (= 1.0.5)
   phantomjs (= 2.0.2)
   postgresql (= 2.0.1)
   pow (= 1.0.0)
   propane (= 1.0.0)
+  property_list_key (= 0.1.0)
   python (= 1.2.1)
   redis (= 1.0.0)
   repository (= 2.2.0)
