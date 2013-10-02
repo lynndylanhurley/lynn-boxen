@@ -65,6 +65,11 @@ class rbenvs {
     ruby    => $version
   }
 
+  ruby::gem { "tmuxinator for ${version}":
+    gem     => 'tmuxinator',
+    ruby    => $version
+  }
+
   ruby::plugin { 'rbenv-vars':
     ensure => 'master',
     source  => 'sstephenson/rbenv-vars'

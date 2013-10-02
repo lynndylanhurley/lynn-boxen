@@ -52,6 +52,8 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
+  notify{"@-->repodir: ${boxen::config::repodir}": }
+
   # core modules, needed for most things
   include dnsmasq
   include git
