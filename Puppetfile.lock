@@ -11,7 +11,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
-    boxen (3.0.4)
+    boxen (3.3.4)
 
 GITHUBTARBALL
   remote: boxen/puppet-chrome
@@ -76,7 +76,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.4.1)
+    homebrew (1.5.1)
 
 GITHUBTARBALL
   remote: boxen/puppet-hub
@@ -121,7 +121,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
   specs:
-    nodejs (3.2.9)
+    nodejs (3.3.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-onepassword
@@ -146,7 +146,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-postgresql
   specs:
-    postgresql (2.0.1)
+    postgresql (3.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-pow
@@ -176,7 +176,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-ruby
   specs:
-    ruby (6.3.4)
+    ruby (6.7.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-skype
@@ -256,7 +256,7 @@ GITHUBTARBALL
 DEPENDENCIES
   alfred (= 1.1.4)
   autoconf (= 1.0.0)
-  boxen (= 3.0.4)
+  boxen (= 3.3.4)
   chrome (= 1.1.1)
   clojure (= 1.2.0)
   ctags (= 1.0.0)
@@ -269,7 +269,7 @@ DEPENDENCIES
   github_for_mac (= 1.0.1)
   googledrive (= 1.0.2)
   heroku (= 2.0.0)
-  homebrew (= 1.4.1)
+  homebrew (= 1.5.1)
   hub (= 1.0.3)
   imagemagick (= 1.2.1)
   inifile (= 1.0.0)
@@ -279,20 +279,20 @@ DEPENDENCIES
   macvim (= 1.0.0)
   mongodb (= 1.0.4)
   nginx (= 1.4.2)
-  nodejs (= 3.2.9)
+  nodejs (= 3.3.0)
   onepassword (= 1.0.2)
   openssl (= 1.0.0)
   osx (= 1.6.0)
   pckeyboardhack (= 1.0.5)
   phantomjs (= 2.0.2)
-  postgresql (= 2.0.1)
+  postgresql (= 3.0.0)
   pow (= 1.0.0)
   propane (= 1.0.0)
   property_list_key (= 0.1.0)
   python (= 1.2.1)
   redis (= 1.0.0)
   repository (= 2.2.0)
-  ruby (= 6.3.4)
+  ruby (= 6.7.2)
   skype (= 1.0.4)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
