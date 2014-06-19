@@ -1,10 +1,4 @@
 class rbenvs {
-  # default ruby versions
-  require ruby::1_9_3
-  require ruby::2_0_0
-  require ruby::2_0_0_p195
-  require ruby::2_0_0_p247
-
   # rbenv
   class { 'ruby::global':
     version => '2.0.0-p247'
