@@ -1,26 +1,7 @@
 class people::lynndylanhurley {
-
-  $home = "/Users/${::boxen_user}"
-  $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
-
-  repository { $dotfiles_dir:
-    source => "lynndylanhurley/dotfiles"
-  }
-
-  exec { "install dotfiles":
-    cwd       => $dotfiles_dir,
-    command   => "./install.sh",
-    provider  => shell,
-    creates   => "${home}/.zshrc",
-    require   => Repository[$dotfiles_dir]
-  }
-
-  #languages
-  include clojure
-  include vlc
-
   #mac apps
   include flux
+  include vlc
   include firefox
   include firefox::nightly
   include dropbox
@@ -31,30 +12,20 @@ class people::lynndylanhurley {
   include chrome::canary
   include transmission
   include skype
-  include propane
+  include spotify
 
   #coding tools (personal)
   include zsh
   include macvim
   include tmux
+  include seil
 
-  #dev env
   include virtualbox
   include vagrant
   include iterm2::stable
-  include postgresql
   include heroku
-  include pow
-  include imagemagick
-  include ctags
   include wget
-  include redis
-  include mongodb
   include github_for_mac
-
-  # phantomjs
-  include phantomjs
-  phantomjs::version { '1.9.0': }
 
   # mac defaults
   osx::recovery_message { 'If this Mac is found, please call 773-234-7737': }
@@ -70,20 +41,11 @@ class people::lynndylanhurley {
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
 
-  #keyboard hack
-  include pckeyboardhack
-  include pckeyboardhack::login_item
-
   # change the capslock key to escape
-  pckeyboardhack::bind { 'keyboard bindings':
+  include seil::login_item
+  seil::bind { 'keyboard bindings':
     mappings => { 'capslock' => 53 }
   }
-
-  include keyremap4macbook
-
-  # launch and add login-item
-  include keyremap4macbook::login_item
-
 
   # heroku
   heroku::plugin { 'accounts':
@@ -105,7 +67,11 @@ class people::lynndylanhurley {
   package {
     [
       'z',
-      'the_silver_searcher'
+      'the_silver_searcher',
+      'taskwarrior',
+      'vcsh',
+      'myrepos',
+      'fzf'
     ]:
   }
 }
