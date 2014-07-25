@@ -35,7 +35,7 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.6.1"
+github "boxen", "3.6.2"
 
 # Support for default hiera data in modules
 
@@ -46,37 +46,36 @@ github "module-data", "0.0.3", :repo => "ripienaar/puppet-module-data"
 
 github "dnsmasq",     "1.0.1"
 github "foreman",     "1.2.0"
-github "gcc",         "2.0.101"
-github "git",         "2.4.0"
+github "gcc",         "2.1.1"
+github "git",         "2.5.0"
 github "go",          "1.1.0"
-github "homebrew",    "1.9.3"
+github "homebrew",    "1.9.4"
 github "hub",         "1.3.0"
 github "inifile",     "1.0.3", :repo => "puppetlabs/puppetlabs-inifile"
 github "nginx",       "1.4.3"
-github "nodejs",      "3.7.0"
+github "nodejs",      "3.8.1"
 github "openssl",     "1.0.0"
 github "phantomjs",   "2.3.0"
 github "pkgconfig",   "1.0.0"
 github "repository",  "2.3.0"
-github "ruby",        "8.0.4"
+github "ruby",        "8.1.2"
 github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.1.1"
 
 # my own shit
 # https://github.com/boxen.
-github "sysctl",  "1.0.0"
-github "java",    "1.1.2"
-github "firefox", "1.1.3"
-github "clojure", "1.2.0"
-github "flux",    "1.0.0"
+github "sysctl",  "1.0.1"
+github "java",    "1.5.0"
+github "firefox", "1.2.1"
+github "flux",    "1.0.1"
 
 github "dropbox",        "1.2.0"
 github "tmux",           "1.0.2"
-github "alfred",         "1.1.8"
+github "alfred",         "1.2.0"
 github "virtualbox",     "1.0.13"
 github "vagrant",        "3.1.1"
-github "iterm2",         "1.0.9"
+github "iterm2",         "1.1.2"
 github "heroku",         "2.1.1"
 github "skype",          "1.0.8"
 github "googledrive",    "1.0.2"
