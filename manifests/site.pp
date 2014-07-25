@@ -52,8 +52,6 @@ Service {
 Homebrew::Formula <| |> -> Package <| |>
 
 node default {
-  notify{"@-->repodir: ${boxen::config::repodir}": }
-
   # core modules, needed for most things
   include dnsmasq
   include git
@@ -74,13 +72,9 @@ node default {
   # misc
   include sysctl::ipforwarding
   include xquartz
-  include python
-  include java
 
   # custom
   include people::lynndylanhurley
-  include nvms
-  include rbenvs
 
   # fail if FDE is not enabled
   #if $::root_encrypted == 'no' {
