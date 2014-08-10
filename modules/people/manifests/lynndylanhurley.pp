@@ -12,7 +12,14 @@ class people::lynndylanhurley {
   include chrome::canary
   include transmission
   include skype
-  include spotify
+  include dash
+  include adium
+
+  #dev
+  include postgresql
+  include redis
+  include mysql
+  include java
 
   #coding tools (personal)
   include zsh
@@ -41,10 +48,42 @@ class people::lynndylanhurley {
   include osx::disable_app_quarantine
   include osx::no_network_dsstores
 
-  # change the capslock key to escape
+  # map capslock to escape
   include seil::login_item
   seil::bind { 'keyboard bindings':
     mappings => { 'capslock' => 53 }
+  }
+
+  # ruby gems
+  ruby_gem { 'bundler for all rubies':
+    gem          => 'bundler',
+    version      => '~>1.0',
+    ruby_version => '*'
+  }
+
+  ruby_gem { 'tmuxinator for all rubies':
+    gem          => 'tmuxinator',
+    ruby_version => '*'
+  }
+
+  ruby_gem { 'hub for all rubies':
+    gem          => 'hub',
+    ruby_version => '*'
+  }
+
+  ruby_gem { 'pry for all rubies':
+    gem          => 'pry',
+    ruby_version => '*'
+  }
+
+  ruby_gem { 'pry-remote for all rubies':
+    gem          => 'pry-remote',
+    ruby_version => '*'
+  }
+
+  ruby_gem { 'mailcatcher for all rubies':
+    gem          => 'mailcatcher',
+    ruby_version => '*'
   }
 
   # heroku
@@ -71,6 +110,7 @@ class people::lynndylanhurley {
       'taskwarrior',
       'vcsh',
       'myrepos',
+      'reattach-to-user-namespace',
       'fzf'
     ]:
   }
